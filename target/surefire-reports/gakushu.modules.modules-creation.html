@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>gakushu.modules.modules-creation</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">2</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2020-11-17 05:48:17 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:7]">[1:7] A valid payload must create a Module only once </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:29]">[2:29] get all modules and then get the first module by id </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">gakushu/modules/modules-creation.feature</span><span class="feature-description">Endpoint for Module creation</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:7]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">A valid payload must create a Module only once </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2458</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:7]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:7]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">17:48:14.627 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[1:7]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">* def externalId = generate.uuid()</div>
+                        </div>
+                        <div class="time-cell passed">478</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">* def payload =</div>
+                        </div>
+                        <div class="time-cell passed">706</div>
+                    </div>
+                    <div class="preformatted" data-parent="4">{
+  externalId: '#(externalId)',
+  name: '#(generate.randomName())',
+  month: '#(generate.randomMonth())',
+  conclude: false
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">Given request payload</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">1148</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">17:48:16.396 request:
+1 &gt; POST http://localhost:8080/gakushu/v1/modules
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 98
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"f6db2710-8b81-4659-afa6-e7cb9acd74fb","name":"Nidoking","month":1,"conclude":false}
+
+17:48:17.085 response time in milliseconds: 684,99
+1 &lt; 201
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 17 Nov 2020 19:48:17 GMT
+1 &lt; Keep-Alive: timeout=60</div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">Then status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">Given request payload</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">103</div>
+                    </div>
+                    <div class="preformatted" data-parent="9">17:48:17.090 request:
+2 &gt; POST http://localhost:8080/gakushu/v1/modules
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 98
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: localhost:8080
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"f6db2710-8b81-4659-afa6-e7cb9acd74fb","name":"Nidoking","month":1,"conclude":false}
+
+17:48:17.190 response time in milliseconds: 97,38
+2 &lt; 400
+2 &lt; Connection: close
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 17 Nov 2020 19:48:17 GMT
+2 &lt; Transfer-Encoding: chunked
+{"title":"Duplicated data!","status":400,"dateTime":"2020-11-17T17:48:17.1489076-02:00"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">Then status 400</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">And match response contains { title:'Duplicated data!', status:400 }</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:29]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [2:29]</span><span class="scenario-name">get all modules and then get the first module by id </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 410</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2:29]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:29]bg">
+                        <div class="step-container" id="12">
+                            <div class="step-ref bg-step">12</div>
+                            <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="12">17:48:17.223 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[2:29]bg">
+                        <div class="step-container" id="13">
+                            <div class="step-ref bg-step">13</div>
+                            <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">286</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">17:48:17.227 request:
+1 &gt; GET http://localhost:8080/gakushu/v1/modules
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+17:48:17.510 response time in milliseconds: 281,90
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 17 Nov 2020 19:48:17 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Transfer-Encoding: chunked
+[{"id":1,"externalId":"2d015876-e644-420f-a179-ad6de5c09e0d","name":"modulo 29","month":12,"conclude":false},{"id":3,"externalId":"33a49f8f-c11e-4879-aa43-6e749e81e48f","name":"Koffing","month":4,"conclude":false},{"id":4,"externalId":"27327334-ccfe-4ab8-9b0d-e95c6837f546","name":"Nidoqueen","month":10,"conclude":false},{"id":6,"externalId":"64b5d6ab-5b5c-48d5-baf8-30056c3b1007","name":"Kadabra","month":4,"conclude":false},{"id":8,"externalId":"2d479497-971d-48a6-89ba-dbc8e11ff5e7","name":"Tentacruel","month":3,"conclude":false},{"id":10,"externalId":"8654c8ac-0ad8-4387-bd28-d7dadf4b5b6b","name":"Parasect","month":7,"conclude":false},{"id":12,"externalId":"d14a0866-adc4-4f54-8a19-be8fdb292db5","name":"Kabuto","month":2,"conclude":false},{"id":14,"externalId":"e3827626-548c-4d84-a882-7798cdc8a988","name":"Goldeen","month":4,"conclude":false},{"id":16,"externalId":"eb051c32-6c56-4025-b0d5-feb540756796","name":"Dragonite","month":2,"conclude":false},{"id":18,"externalId":"5ed78a98-06ee-4805-885b-ec9f0fb880e5","name":"Dodrio","month":3,"conclude":false},{"id":20,"externalId":"34b89adb-53af-4c18-92be-4b30a879d904","name":"Golduck","month":5,"conclude":false},{"id":23,"externalId":"dc4983b4-4614-45e4-939d-860b251e833a","name":"Raticate","month":1,"conclude":false},{"id":25,"externalId":"e460e6aa-bdc7-4c2d-a386-9588b0bbfe23","name":"Tentacool","month":4,"conclude":false},{"id":27,"externalId":"f6db2710-8b81-4659-afa6-e7cb9acd74fb","name":"Nidoking","month":1,"conclude":false}]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">* def first = response[0]</div>
+                        </div>
+                        <div class="time-cell passed">28</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">Given path '/', first.externalId</div>
+                        </div>
+                        <div class="time-cell passed">30</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">65</div>
+                    </div>
+                    <div class="preformatted" data-parent="18">17:48:17.574 request:
+2 &gt; GET http://localhost:8080/gakushu/v1/modules/2d015876-e644-420f-a179-ad6de5c09e0d
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: localhost:8080
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+17:48:17.634 response time in milliseconds: 59,33
+2 &lt; 200
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 17 Nov 2020 19:48:17 GMT
+2 &lt; Keep-Alive: timeout=60
+2 &lt; Transfer-Encoding: chunked
+{"id":1,"externalId":"2d015876-e644-420f-a179-ad6de5c09e0d","name":"modulo 29","month":12,"conclude":false}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
