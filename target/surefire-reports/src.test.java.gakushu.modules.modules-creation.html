@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.gakushu.modules.modules-creation</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">7</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2020-11-18 02:30:35 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[3.1:61]">[3.1:61] Invalid fields must return error code 400 </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3.2:62]">[3.2:62] Invalid fields must return error code 400 </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3.3:63]">[3.3:63] Invalid fields must return error code 400 </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3.4:64]">[3.4:64] Invalid fields must return error code 400 </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3.5:65]">[3.5:65] Invalid fields must return error code 400 </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3.6:66]">[3.6:66] Invalid fields must return error code 400 </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3.7:67]">[3.7:67] Invalid fields must return error code 400 </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/gakushu/modules/modules-creation.feature</span><span class="feature-description">Endpoint for Module creation</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3.1:61]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [3.1:61]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1711</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3.1:61]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3.1:61]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">14:30:32.561 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[3.1:61]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">21</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">Given url 'http://localhost:8080/gakushu'</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">And path 'v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">759</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">{
+  externalId: null,
+  name: #(generate.randomName()),
+  month: #(generate.randomMonth()),
+  conclude: false
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">908</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">14:30:34.441 request:
+1 &gt; POST http://localhost:8080/gakushu/v1/modules
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 63
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":null,"name":"Cubone","month":10,"conclude":false}
+
+14:30:34.498 response time in milliseconds: 53,35
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 &lt; Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"fields":[{"name":"externalId","message":"externalId not be null"}],"dateTime":"2020-11-18T14:30:34.4842105-02:00"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">Then status 400</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">And match response contains { title:'Invalid fields!', status:400 }</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3.2:62]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [3.2:62]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 204</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3.2:62]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3.2:62]bg">
+                        <div class="step-container" id="9">
+                            <div class="step-ref bg-step">9</div>
+                            <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="9">14:30:34.516 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[3.2:62]bg">
+                        <div class="step-container" id="10">
+                            <div class="step-ref bg-step">10</div>
+                            <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">Given url 'http://localhost:8080/gakushu'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">And path 'v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">167</div>
+                    </div>
+                    <div class="preformatted" data-parent="13">{
+  externalId: #(generate.uuid()),
+  name: null,
+  month: #(generate.randomMonth()),
+  conclude: false
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">35</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">14:30:34.702 request:
+1 &gt; POST http://localhost:8080/gakushu/v1/modules
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 92
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"0561e981-9612-4dd0-8762-a7bbe926bcb7","name":null,"month":9,"conclude":false}
+
+14:30:34.721 response time in milliseconds: 16,26
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 &lt; Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-18T14:30:34.7092156-02:00"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">Then status 400</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">And match response contains { title:'Invalid fields!', status:400 }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3.3:63]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [3.3:63]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 125</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3.3:63]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3.3:63]bg">
+                        <div class="step-container" id="17">
+                            <div class="step-ref bg-step">17</div>
+                            <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="17">14:30:34.739 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[3.3:63]bg">
+                        <div class="step-container" id="18">
+                            <div class="step-ref bg-step">18</div>
+                            <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">Given url 'http://localhost:8080/gakushu'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-cell passed">And path 'v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref passed">21</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">110</div>
+                    </div>
+                    <div class="preformatted" data-parent="21">{
+  externalId: #(generate.uuid()),
+  name: '  ',
+  month: #(generate.randomMonth()),
+  conclude: false
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref passed">22</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">12</div>
+                    </div>
+                    <div class="preformatted" data-parent="22">14:30:34.856 request:
+1 &gt; POST http://localhost:8080/gakushu/v1/modules
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 92
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"4d6ffe96-c120-426e-8359-6f84e600ef48","name":"  ","month":6,"conclude":false}
+
+14:30:34.865 response time in milliseconds: 7,82
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 &lt; Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-18T14:30:34.8622141-02:00"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-cell passed">Then status 400</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref passed">24</div>
+                            <div class="step-cell passed">And match response contains { title:'Invalid fields!', status:400 }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3.4:64]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [3.4:64]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 119</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3.4:64]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3.4:64]bg">
+                        <div class="step-container" id="25">
+                            <div class="step-ref bg-step">25</div>
+                            <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="25">14:30:34.884 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[3.4:64]bg">
+                        <div class="step-container" id="26">
+                            <div class="step-ref bg-step">26</div>
+                            <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-cell passed">Given url 'http://localhost:8080/gakushu'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-cell passed">And path 'v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref passed">29</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">104</div>
+                    </div>
+                    <div class="preformatted" data-parent="29">{
+  externalId: #(generate.uuid()),
+  name: #(generate.randomName()),
+  month: null,
+  conclude: false
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref passed">30</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">13</div>
+                    </div>
+                    <div class="preformatted" data-parent="30">14:30:34.994 request:
+1 &gt; POST http://localhost:8080/gakushu/v1/modules
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 99
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"edd93213-51a1-490f-a83d-41872875fc5b","name":"Staryu","month":null,"conclude":false}
+
+14:30:35.004 response time in milliseconds: 8,61
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 &lt; Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"fields":[{"name":"month","message":"month not be null"}],"dateTime":"2020-11-18T14:30:35.0002149-02:00"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-cell passed">Then status 400</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-cell passed">And match response contains { title:'Invalid fields!', status:400 }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3.5:65]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [3.5:65]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 179</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3.5:65]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3.5:65]bg">
+                        <div class="step-container" id="33">
+                            <div class="step-ref bg-step">33</div>
+                            <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="33">14:30:35.026 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[3.5:65]bg">
+                        <div class="step-container" id="34">
+                            <div class="step-ref bg-step">34</div>
+                            <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-cell passed">Given url 'http://localhost:8080/gakushu'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref passed">36</div>
+                            <div class="step-cell passed">And path 'v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="37">
+                            <div class="step-ref passed">37</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">87</div>
+                    </div>
+                    <div class="preformatted" data-parent="37">{
+  externalId: #(generate.uuid()),
+  name: #(generate.randomName()),
+  month: 0,
+  conclude: false
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="38">
+                            <div class="step-ref passed">38</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">91</div>
+                    </div>
+                    <div class="preformatted" data-parent="38">14:30:35.119 request:
+1 &gt; POST http://localhost:8080/gakushu/v1/modules
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 100
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"e17ec2e6-1314-4e56-b49c-ed95f2d77e38","name":"Farfetch'd","month":0,"conclude":false}
+
+14:30:35.207 response time in milliseconds: 86,09
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 &lt; Transfer-Encoding: chunked
+{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-18T14:30:35.2022112-02:00"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="39">
+                            <div class="step-ref passed">39</div>
+                            <div class="step-cell passed">Then status 400</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="40">
+                            <div class="step-ref passed">40</div>
+                            <div class="step-cell passed">And match response contains { title:'Month cannot be less than or equal to 0!', status:400 }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3.6:66]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [3.6:66]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 150</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3.6:66]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3.6:66]bg">
+                        <div class="step-container" id="41">
+                            <div class="step-ref bg-step">41</div>
+                            <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="41">14:30:35.237 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[3.6:66]bg">
+                        <div class="step-container" id="42">
+                            <div class="step-ref bg-step">42</div>
+                            <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="43">
+                            <div class="step-ref passed">43</div>
+                            <div class="step-cell passed">Given url 'http://localhost:8080/gakushu'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="44">
+                            <div class="step-ref passed">44</div>
+                            <div class="step-cell passed">And path 'v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="45">
+                            <div class="step-ref passed">45</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">69</div>
+                    </div>
+                    <div class="preformatted" data-parent="45">{
+  externalId: #(generate.uuid()),
+  name: #(generate.randomName()),
+  month: -3,
+  conclude: false
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="46">
+                            <div class="step-ref passed">46</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">78</div>
+                    </div>
+                    <div class="preformatted" data-parent="46">14:30:35.312 request:
+1 &gt; POST http://localhost:8080/gakushu/v1/modules
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 99
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"b7a35ebd-51cc-4952-b13d-3036b7574f61","name":"Venusaur","month":-3,"conclude":false}
+
+14:30:35.388 response time in milliseconds: 72,27
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 &lt; Transfer-Encoding: chunked
+{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-18T14:30:35.3842138-02:00"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="47">
+                            <div class="step-ref passed">47</div>
+                            <div class="step-cell passed">Then status 400</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="48">
+                            <div class="step-ref passed">48</div>
+                            <div class="step-cell passed">And match response contains { title:'Month cannot be less than or equal to 0!', status:400 }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3.7:67]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [3.7:67]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 218</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3.7:67]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3.7:67]bg">
+                        <div class="step-container" id="49">
+                            <div class="step-ref bg-step">49</div>
+                            <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="49">14:30:35.402 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[3.7:67]bg">
+                        <div class="step-container" id="50">
+                            <div class="step-ref bg-step">50</div>
+                            <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="51">
+                            <div class="step-ref passed">51</div>
+                            <div class="step-cell passed">Given url 'http://localhost:8080/gakushu'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="52">
+                            <div class="step-ref passed">52</div>
+                            <div class="step-cell passed">And path 'v1/modules'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="53">
+                            <div class="step-ref passed">53</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">130</div>
+                    </div>
+                    <div class="preformatted" data-parent="53">{
+  externalId: #(generate.uuid()),
+  name: #(generate.randomName()),
+  month: 15,
+  conclude: false
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="54">
+                            <div class="step-ref passed">54</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">86</div>
+                    </div>
+                    <div class="preformatted" data-parent="54">14:30:35.538 request:
+1 &gt; POST http://localhost:8080/gakushu/v1/modules
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 98
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"6f39dacc-2779-4c5d-bf0e-3be2ef8b1586","name":"Ivysaur","month":15,"conclude":false}
+
+14:30:35.621 response time in milliseconds: 81,79
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 18 Nov 2020 16:30:35 GMT
+1 &lt; Transfer-Encoding: chunked
+{"title":"Month not be greater than 12!","status":400,"dateTime":"2020-11-18T14:30:35.6182119-02:00"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="55">
+                            <div class="step-ref passed">55</div>
+                            <div class="step-cell passed">Then status 400</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="56">
+                            <div class="step-ref passed">56</div>
+                            <div class="step-cell passed">And match response contains { title:'Month not be greater than 12!', status:400 }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
