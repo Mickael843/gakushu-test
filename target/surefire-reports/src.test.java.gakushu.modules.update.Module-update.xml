@@ -1,0 +1,19 @@
+<testsuite failures="0" name="src/test/java/gakushu/modules/update/Module-update.feature" skipped="0" tests="1" time="1.395998">
+  <testcase classname="src.test.java.gakushu.modules.update.Module-update" name="A valid payload for update the field conclude only" time="1.395998">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+* def conclude = generate.oppositeValue(first.conclude) ................... passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+And path '/', first.externalId ............................................ passed
+When method patch ......................................................... passed
+Then status 204 ........................................................... passed
+Given path '/', first.externalId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains {conclude: #(conclude)} ....................... passed</system-out>
+  </testcase>
+</testsuite>

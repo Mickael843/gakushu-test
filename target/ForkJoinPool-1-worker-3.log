@@ -1,211 +1,351 @@
-14:30:32.561 karate.env system property was:  
-14:30:34.441 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
+19:49:09.845 karate.env system property was:  
+19:49:10.970 request:
+1 > DELETE http://localhost:8080/gakushu/v1/modules/9ba86713-9247-4dd4-8f7e-b35aff058c29
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 63
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":null,"name":"Cubone","month":10,"conclude":false}
 
-14:30:34.498 response time in milliseconds: 53,35
-1 < 400
-1 < Connection: close
+19:49:11.033 response time in milliseconds: 59,22
+1 < 404
+1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 < Date: Sun, 22 Nov 2020 21:49:11 GMT
+1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"externalId","message":"externalId not be null"}],"dateTime":"2020-11-18T14:30:34.4842105-02:00"}
+{"title":"Module not found","status":404,"dateTime":"2020-11-22T19:49:11.0225113-02:00"}
 
-14:30:34.516 karate.env system property was:  
-14:30:34.702 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
+0, expected: 404, response time: 67, url: http://localhost:8080/gakushu/v1/modules/63e7ea8a-0ba8-4bff-a207-f3a707dd7497, response: {"dateTime":"2020-11-22T19:46:08.9919359-02:00","title":"Module not found","status":400}
+:"Hypno","month":1,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":true}]
+
+19:43:21.198 request:
+2 > PATCH http://localhost:8080/gakushu/v1/modules/a33607c2-85b5-4daa-93fb-ef38ee164de0
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 17
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"conclude":true}
+
+19:43:21.249 response time in milliseconds: 38,14
+2 < 204
+2 < Connection: keep-alive
+2 < Date: Sun, 22 Nov 2020 21:43:21 GMT
+2 < Keep-Alive: timeout=60
+
+19:43:21.249 request:
+3 > GET http://localhost:8080/gakushu/v1/modules/a33607c2-85b5-4daa-93fb-ef38ee164de0
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+19:43:21.275 response time in milliseconds: 18,36
+3 < 200
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Sun, 22 Nov 2020 21:43:21 GMT
+3 < Keep-Alive: timeout=60
+3 < Transfer-Encoding: chunked
+{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":true}
+
+ Nov 2020 21:39:31 GMT
+3 < Keep-Alive: timeout=60
+3 < Transfer-Encoding: chunked
+{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":false}
+
+19:39:32.405 karate.env system property was:  
+19:39:32.405 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 92
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"0561e981-9612-4dd0-8762-a7bbe926bcb7","name":null,"month":9,"conclude":false}
 
-14:30:34.721 response time in milliseconds: 16,26
-1 < 400
-1 < Connection: close
+19:39:32.473 response time in milliseconds: 58,90
+1 < 200
+1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 < Date: Sun, 22 Nov 2020 21:39:31 GMT
+1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-18T14:30:34.7092156-02:00"}
+[{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Ivysaur","month":7,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":true},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":false}]
 
-14:30:34.739 karate.env system property was:  
-14:30:34.856 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
+19:39:32.551 request:
+2 > PATCH http://localhost:8080/gakushu/v1/modules/12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 17
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"conclude":true}
+
+19:39:32.647 response time in milliseconds: 95,07
+2 < 204
+2 < Connection: keep-alive
+2 < Date: Sun, 22 Nov 2020 21:39:32 GMT
+2 < Keep-Alive: timeout=60
+
+19:39:32.651 request:
+3 > GET http://localhost:8080/gakushu/v1/modules/12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+19:39:32.670 response time in milliseconds: 17,98
+3 < 200
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Sun, 22 Nov 2020 21:39:32 GMT
+3 < Keep-Alive: timeout=60
+3 < Transfer-Encoding: chunked
+{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":true}
+
+19:39:32.676 karate.env system property was:  
+19:39:32.692 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 92
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"4d6ffe96-c120-426e-8359-6f84e600ef48","name":"  ","month":6,"conclude":false}
 
-14:30:34.865 response time in milliseconds: 7,82
-1 < 400
-1 < Connection: close
+19:39:32.715 response time in milliseconds: 22,52
+1 < 200
+1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 < Date: Sun, 22 Nov 2020 21:39:32 GMT
+1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-18T14:30:34.8622141-02:00"}
+[{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Ivysaur","month":7,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":true},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":true}]
 
-14:30:34.884 karate.env system property was:  
-14:30:34.994 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
+19:39:32.934 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/cee1c6c3-24a2-437e-9381-511ea7322255
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 63
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":null,"name":"Golbat","month":10,"conclude":false}
+
+19:39:32.950 response time in milliseconds: 9,30
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Sun, 22 Nov 2020 21:39:32 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"fields":[{"name":"externalId","message":"externalId not be null"}],"dateTime":"2020-11-22T19:39:32.9500687-02:00"}
+
+19:39:32.981 karate.env system property was:  
+19:39:32.981 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 99
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"edd93213-51a1-490f-a83d-41872875fc5b","name":"Staryu","month":null,"conclude":false}
 
-14:30:35.004 response time in milliseconds: 8,61
-1 < 400
-1 < Connection: close
+19:39:33.029 response time in milliseconds: 33,23
+1 < 200
+1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 < Date: Sun, 22 Nov 2020 21:39:32 GMT
+1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"month","message":"month not be null"}],"dateTime":"2020-11-18T14:30:35.0002149-02:00"}
+[{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Ivysaur","month":7,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":true},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":true}]
 
-14:30:35.026 karate.env system property was:  
-14:30:35.119 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
+19:39:33.159 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/cee1c6c3-24a2-437e-9381-511ea7322255
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 92
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"6dd856a0-a811-4a91-9fc2-847d0b66e8aa","name":null,"month":8,"conclude":false}
+
+19:39:33.175 response time in milliseconds: 9,62
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Sun, 22 Nov 2020 21:39:32 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-22T19:39:33.1599362-02:00"}
+
+19:39:33.191 karate.env system property was:  
+19:39:33.206 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 100
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"e17ec2e6-1314-4e56-b49c-ed95f2d77e38","name":"Farfetch'd","month":0,"conclude":false}
 
-14:30:35.207 response time in milliseconds: 86,09
-1 < 400
-1 < Connection: close
+19:39:33.251 response time in milliseconds: 26,17
+1 < 200
+1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 < Date: Sun, 22 Nov 2020 21:39:32 GMT
+1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-18T14:30:35.2022112-02:00"}
+[{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Ivysaur","month":7,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":true},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":true}]
 
-14:30:35.237 karate.env system property was:  
-14:30:35.312 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
+19:39:33.310 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/cee1c6c3-24a2-437e-9381-511ea7322255
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 92
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"9cdee47d-73cc-402b-b864-98b0a8817778","name":"  ","month":9,"conclude":false}
+
+19:39:33.342 response time in milliseconds: 17,53
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Sun, 22 Nov 2020 21:39:32 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-22T19:39:33.3265523-02:00"}
+
+19:39:33.342 karate.env system property was:  
+19:39:33.357 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 99
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"b7a35ebd-51cc-4952-b13d-3036b7574f61","name":"Venusaur","month":-3,"conclude":false}
 
-14:30:35.388 response time in milliseconds: 72,27
-1 < 400
-1 < Connection: close
+19:39:33.416 response time in milliseconds: 54,82
+1 < 200
+1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:30:34 GMT
+1 < Date: Sun, 22 Nov 2020 21:39:32 GMT
+1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-18T14:30:35.3842138-02:00"}
+[{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Ivysaur","month":7,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":true},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":true}]
 
-14:30:35.402 karate.env system property was:  
-14:30:35.538 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
+19:39:33.706 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/cee1c6c3-24a2-437e-9381-511ea7322255
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 99
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"3e65a3f8-10a6-47d6-9159-4ed524aa4c83","name":"Pinsir","month":null,"conclude":false}
+
+19:39:33.727 response time in milliseconds: 19,39
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Sun, 22 Nov 2020 21:39:33 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"fields":[{"name":"month","message":"month not be null"}],"dateTime":"2020-11-22T19:39:33.717657-02:00"}
+
+19:39:33.773 karate.env system property was:  
+19:39:33.789 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 98
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"6f39dacc-2779-4c5d-bf0e-3be2ef8b1586","name":"Ivysaur","month":15,"conclude":false}
 
-14:30:35.621 response time in milliseconds: 81,79
-1 < 400
-1 < Connection: close
+19:39:33.844 response time in milliseconds: 53,98
+1 < 200
+1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:30:35 GMT
+1 < Date: Sun, 22 Nov 2020 21:39:33 GMT
+1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-{"title":"Month not be greater than 12!","status":400,"dateTime":"2020-11-18T14:30:35.6182119-02:00"}
+[{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Ivysaur","month":7,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":true},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":true}]
 
- was:  
-14:17:01.511 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
+19:39:33.964 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/cee1c6c3-24a2-437e-9381-511ea7322255
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 99
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"50ac6650-6e06-40ab-9125-4870a8dab814","name":"Sandslash","month":0,"conclude":false}
+
+19:39:34.105 response time in milliseconds: 139,30
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Sun, 22 Nov 2020 21:39:33 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-22T19:39:34.1007919-02:00"}
+
+19:39:34.119 karate.env system property was:  
+19:39:34.131 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 92
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"6a5f1eb8-fc77-4e78-b94c-44d5fb8e1d00","name":null,"month":9,"conclude":false}
 
-14:17:01.519 response time in milliseconds: 6,06
-1 < 400
-1 < Connection: close
+19:39:34.188 response time in milliseconds: 55,28
+1 < 200
+1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:17:00 GMT
+1 < Date: Sun, 22 Nov 2020 21:39:33 GMT
+1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-18T14:17:01.5158376-02:00"}
+[{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Ivysaur","month":7,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":true},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":true}]
 
-14:17:01.536 karate.env system property was:  
-14:17:01.619 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
+19:39:34.290 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/cee1c6c3-24a2-437e-9381-511ea7322255
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 96
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"374019f5-b6c6-4da6-b17a-a9d2882526cb","name":"Eevee","month":-3,"conclude":false}
+
+19:39:34.348 response time in milliseconds: 56,68
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Sun, 22 Nov 2020 21:39:33 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-22T19:39:34.3445279-02:00"}
+
+19:39:34.356 karate.env system property was:  
+19:39:34.356 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 98
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"1c55b133-fad5-454a-9e10-df7ec5689265","name":"Cloyster","month":0,"conclude":false}
 
-14:17:01.693 response time in milliseconds: 71,75
-1 < 400
-1 < Connection: close
+19:39:34.390 response time in milliseconds: 26,03
+1 < 200
+1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:17:01 GMT
+1 < Date: Sun, 22 Nov 2020 21:39:33 GMT
+1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-18T14:17:01.6858377-02:00"}
+[{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Ivysaur","month":7,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":true},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":true}]
 
-14:17:01.709 karate.env system property was:  
-14:17:01.791 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 96
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"f2ea5d32-05b3-4ab7-ae6c-2cd2596263f1","name":"Paras","month":-3,"conclude":false}
+19:39:34.469 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/cee1c6c3-24a2-437e-9381-511ea7322255
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 100
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"6f94934d-5bc0-45fb-b35e-43a93c091186","name":"Exeggcute","month":15,"conclude":false}
 
-14:17:01.835 response time in milliseconds: 41,86
-1 < 400
-1 < Connection: close
-1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:17:01 GMT
-1 < Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-18T14:17:01.8298334-02:00"}
-
-14:17:01.865 karate.env system property was:  
-14:17:01.960 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 98
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"d984bb10-321a-4dbc-b3d6-a794a4273fcb","name":"Poliwag","month":15,"conclude":false}
-
-14:17:02.020 response time in milliseconds: 58,01
-1 < 400
-1 < Connection: close
-1 < Content-Type: application/json
-1 < Date: Wed, 18 Nov 2020 16:17:01 GMT
-1 < Transfer-Encoding: chunked
-{"title":"Month not be greater than 12!","status":400,"dateTime":"2020-11-18T14:17:02.012836-02:00"}
-
-tus":400,"dateTime":"2020-11-18T14:15:13.1753441-02:00"}
+19:39:34.517 response time in milliseconds: 40,10
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Sun, 22 Nov 2020 21:39:33 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Month not be greater than 12!","status":400,"dateTime":"2020-11-22T19:39:34.5136699-02:00"}
 

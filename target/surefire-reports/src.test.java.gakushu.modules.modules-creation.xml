@@ -1,83 +1,64 @@
-<testsuite failures="0" name="src/test/java/gakushu/modules/modules-creation.feature" skipped="0" tests="7" time="2.70501">
-  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="1.710814">
+<testsuite failures="0" name="src/test/java/gakushu/modules/modules-creation.feature" skipped="0" tests="9" time="5.83081">
+  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="A valid payload must create a Module only once" time="4.137206">
     <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
-Given url 'http://localhost:8080/gakushu' ................................. passed
-And path 'v1/modules' ..................................................... passed
-And request ............................................................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/gakushu/v1/modules/' + externalId .............. passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
 When method post .......................................................... passed
 Then status 400 ........................................................... passed
-And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
+And match response contains { title:'Invalid duplicated data', status:400 } . passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.203582">
+  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="get all modules and then get the first module by id" time="0.331382">
     <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
-Given url 'http://localhost:8080/gakushu' ................................. passed
-And path 'v1/modules' ..................................................... passed
-And request ............................................................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/gakushu/v1/modules/' + externalId .............. passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
 When method post .......................................................... passed
 Then status 400 ........................................................... passed
-And match response contains { title:'Invalid fields!', status:400 } ....... passed
+And match response contains { title:'Invalid duplicated data', status:400 } . passed
 * url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
-Given url 'http://localhost:8080/gakushu' ................................. passed
-And path 'v1/modules' ..................................................... passed
-And request ............................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... passed
-And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path '/', first.externalId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.124814">
+  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.286564">
     <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
-Given url 'http://localhost:8080/gakushu' ................................. passed
-And path 'v1/modules' ..................................................... passed
-And request ............................................................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/gakushu/v1/modules/' + externalId .............. passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
 When method post .......................................................... passed
 Then status 400 ........................................................... passed
-And match response contains { title:'Invalid fields!', status:400 } ....... passed
+And match response contains { title:'Invalid duplicated data', status:400 } . passed
 * url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
-Given url 'http://localhost:8080/gakushu' ................................. passed
-And path 'v1/modules' ..................................................... passed
-And request ............................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... passed
-And match response contains { title:'Invalid fields!', status:400 } ....... passed
-* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
-* def generate = Java.type('gakushu.DataGenerator') ....................... passed
-Given url 'http://localhost:8080/gakushu' ................................. passed
-And path 'v1/modules' ..................................................... passed
-And request ............................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... passed
-And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
-  </testcase>
-  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.118829">
-    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
-* def generate = Java.type('gakushu.DataGenerator') ....................... passed
-Given url 'http://localhost:8080/gakushu' ................................. passed
-And path 'v1/modules' ..................................................... passed
-And request ............................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... passed
-And match response contains { title:'Invalid fields!', status:400 } ....... passed
-* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
-* def generate = Java.type('gakushu.DataGenerator') ....................... passed
-Given url 'http://localhost:8080/gakushu' ................................. passed
-And path 'v1/modules' ..................................................... passed
-And request ............................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... passed
-And match response contains { title:'Invalid fields!', status:400 } ....... passed
-* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
-* def generate = Java.type('gakushu.DataGenerator') ....................... passed
-Given url 'http://localhost:8080/gakushu' ................................. passed
-And path 'v1/modules' ..................................................... passed
-And request ............................................................... passed
-When method post .......................................................... passed
-Then status 400 ........................................................... passed
-And match response contains { title:'Invalid fields!', status:400 } ....... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path '/', first.externalId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
 * url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
 Given url 'http://localhost:8080/gakushu' ................................. passed
@@ -87,8 +68,170 @@ When method post .......................................................... pass
 Then status 400 ........................................................... passed
 And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.179364">
+  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.189876">
     <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/gakushu/v1/modules/' + externalId .............. passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid duplicated data', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path '/', first.externalId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given url 'http://localhost:8080/gakushu' ................................. passed
+And path 'v1/modules' ..................................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given url 'http://localhost:8080/gakushu' ................................. passed
+And path 'v1/modules' ..................................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.193407">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/gakushu/v1/modules/' + externalId .............. passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid duplicated data', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path '/', first.externalId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given url 'http://localhost:8080/gakushu' ................................. passed
+And path 'v1/modules' ..................................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given url 'http://localhost:8080/gakushu' ................................. passed
+And path 'v1/modules' ..................................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given url 'http://localhost:8080/gakushu' ................................. passed
+And path 'v1/modules' ..................................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.098874">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/gakushu/v1/modules/' + externalId .............. passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid duplicated data', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path '/', first.externalId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given url 'http://localhost:8080/gakushu' ................................. passed
+And path 'v1/modules' ..................................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given url 'http://localhost:8080/gakushu' ................................. passed
+And path 'v1/modules' ..................................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given url 'http://localhost:8080/gakushu' ................................. passed
+And path 'v1/modules' ..................................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given url 'http://localhost:8080/gakushu' ................................. passed
+And path 'v1/modules' ..................................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.18794">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/gakushu/v1/modules/' + externalId .............. passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid duplicated data', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path '/', first.externalId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
 Given url 'http://localhost:8080/gakushu' ................................. passed
 And path 'v1/modules' ..................................................... passed
@@ -129,8 +272,29 @@ When method post .......................................................... pass
 Then status 400 ........................................................... passed
 And match response contains { title:'Month cannot be less than or equal to 0!', status:400 } . passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.149923">
+  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.274521">
     <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/gakushu/v1/modules/' + externalId .............. passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid duplicated data', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path '/', first.externalId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
 Given url 'http://localhost:8080/gakushu' ................................. passed
 And path 'v1/modules' ..................................................... passed
@@ -179,8 +343,29 @@ When method post .......................................................... pass
 Then status 400 ........................................................... passed
 And match response contains { title:'Month cannot be less than or equal to 0!', status:400 } . passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.217685">
+  <testcase classname="src.test.java.gakushu.modules.modules-creation" name="Invalid fields must return error code 400" time="0.13104">
     <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/gakushu/v1/modules/' + externalId .............. passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid duplicated data', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path '/', first.externalId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
 Given url 'http://localhost:8080/gakushu' ................................. passed
 And path 'v1/modules' ..................................................... passed

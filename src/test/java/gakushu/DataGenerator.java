@@ -11,6 +11,10 @@ public class DataGenerator {
 
     private static final String defaultLocale = "en-US";
 
+    public static Boolean oppositeValue(boolean concludeStatus) {
+        return !concludeStatus;
+    }
+
     public static String uuid() {
         return UUID.randomUUID().toString();
     }

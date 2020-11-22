@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/java/gakushu/modules/delete/module-delete.feature" skipped="0" tests="1" time="1.012111">
+  <testcase classname="src.test.java.gakushu.modules.delete.module-delete" name="Given a invalid external id and return not found" time="1.012111">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+Given path '/', generate.uuid() ........................................... passed
+When method delete ........................................................ passed
+Then status 404 ........................................................... passed
+And match response contains {"title":"Module not found","status":404} ..... passed</system-out>
+  </testcase>
+</testsuite>
