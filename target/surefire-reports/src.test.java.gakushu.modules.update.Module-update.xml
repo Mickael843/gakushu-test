@@ -1,19 +1,21 @@
-<testsuite failures="0" name="src/test/java/gakushu/modules/update/Module-update.feature" skipped="0" tests="1" time="1.395998">
-  <testcase classname="src.test.java.gakushu.modules.update.Module-update" name="A valid payload for update the field conclude only" time="1.395998">
+<testsuite failures="0" name="src/test/java/gakushu/modules/update/module-update.feature" skipped="0" tests="1" time="1.78814">
+  <testcase classname="src.test.java.gakushu.modules.update.module-update" name="A valid payload must update a Module" time="1.78814">
     <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
 * def generate = Java.type('gakushu.DataGenerator') ....................... passed
 When method get ........................................................... passed
 Then status 200 ........................................................... passed
 * def first = response[0] ................................................. passed
-* def conclude = generate.oppositeValue(first.conclude) ................... passed
+* def externalId = generate.uuid() ........................................ passed
+* def name = generate.randomName() ........................................ passed
+* def month = generate.randomMonth() ...................................... passed
 * def payload = ........................................................... passed
 Given request payload ..................................................... passed
 And path '/', first.externalId ............................................ passed
-When method patch ......................................................... passed
+When method put ........................................................... passed
 Then status 204 ........................................................... passed
 Given path '/', first.externalId .......................................... passed
 When method get ........................................................... passed
 Then status 200 ........................................................... passed
-And match response contains {conclude: #(conclude)} ....................... passed</system-out>
+And match response contains {externalId:'#(first.externalId)', name:'#(name)', month: '#(month)'} . passed</system-out>
   </testcase>
 </testsuite>
