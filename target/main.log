@@ -1,497 +1,1149 @@
-19:19:37.565 karate.env system property was:  
-19:19:39.009 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 96
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false}
-
-19:19:39.125 response time in milliseconds: 122,50
-1 < 201
-1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Date: Sun, 22 Nov 2020 21:19:39 GMT
-1 < Keep-Alive: timeout=60
-1 < Location: /gakushu/v1/modules/cee1c6c3-24a2-437e-9381-511ea7322255
-
-19:19:39.143 request:
-2 > POST http://localhost:8080/gakushu/v1/modules
-2 > Accept-Encoding: gzip,deflate
-2 > Connection: Keep-Alive
-2 > Content-Length: 96
-2 > Content-Type: application/json; charset=UTF-8
-2 > Host: localhost:8080
-2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false}
-
-19:19:39.255 response time in milliseconds: 104,06
-2 < 400
-2 < Connection: close
-2 < Content-Type: application/json
-2 < Date: Sun, 22 Nov 2020 21:19:39 GMT
-2 < Transfer-Encoding: chunked
-{"title":"Invalid duplicated data","status":400,"fields":[{"name":"","message":"Invalid duplicated data"},{"name":"externalId","message":"Invalid duplicated data"},{"name":"name","message":"Invalid duplicated data"}],"dateTime":"2020-11-22T19:19:39.2479334-02:00"}
-
-19:19:39.283 karate.env system property was:  
-19:19:39.299 request:
+16:22:21.864 karate.env system property was:  
+16:22:22.771 request:
 1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:39.414 response time in milliseconds: 107,14
+16:22:23.921 response time in milliseconds: 1129,95
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:39 GMT
+1 < Date: Mon, 23 Nov 2020 18:22:23 GMT
 1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-[{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Machop","month":9,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false}]
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
 
-19:19:39.468 request:
-2 > GET http://localhost:8080/gakushu/v1/modules/a33607c2-85b5-4daa-93fb-ef38ee164de0
+16:22:24.015 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:39.488 response time in milliseconds: 18,92
+16:22:24.154 response time in milliseconds: 122,75
 2 < 200
 2 < Connection: keep-alive
 2 < Content-Type: application/json
-2 < Date: Sun, 22 Nov 2020 21:19:39 GMT
+2 < Date: Mon, 23 Nov 2020 18:22:23 GMT
 2 < Keep-Alive: timeout=60
 2 < Transfer-Encoding: chunked
-{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Machop","month":9,"conclude":false}
+[]
 
-19:19:39.515 karate.env system property was:  
-19:19:39.813 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 61
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":null,"name":"Eevee","month":7,"conclude":false}
-
-19:19:39.813 response time in milliseconds: 7,59
-1 < 400
-1 < Connection: close
-1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:39 GMT
-1 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"externalId","message":"externalId not be null"}],"dateTime":"2020-11-22T19:19:39.8136566-02:00"}
-
-19:19:39.844 karate.env system property was:  
-19:19:39.923 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 93
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"f6f623e9-41d2-4614-a9e5-e574b13154d6","name":null,"month":10,"conclude":false}
-
-19:19:39.938 response time in milliseconds: 9,45
-1 < 400
-1 < Connection: close
-1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:39 GMT
-1 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-22T19:19:39.9230376-02:00"}
-
-19:19:39.954 karate.env system property was:  
-19:19:40.064 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 92
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"661b62ae-1990-4184-a450-3d46a7545548","name":"  ","month":6,"conclude":false}
-
-19:19:40.064 response time in milliseconds: 6,86
-1 < 400
-1 < Connection: close
-1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:39 GMT
-1 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-22T19:19:40.0647148-02:00"}
-
-19:19:40.111 karate.env system property was:  
-19:19:40.236 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 100
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"fe1e037f-3acb-4372-9f80-ed81f8230161","name":"Diglett","month":null,"conclude":false}
-
-19:19:40.236 response time in milliseconds: 6,87
-1 < 400
-1 < Connection: close
-1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:40 GMT
-1 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"month","message":"month not be null"}],"dateTime":"2020-11-22T19:19:40.2365926-02:00"}
-
-19:19:40.267 karate.env system property was:  
-19:19:40.345 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 97
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"def372dc-f3f1-4f2d-bd3a-a7bfa6d63ec0","name":"Snorlax","month":0,"conclude":false}
-
-19:19:40.412 response time in milliseconds: 55,56
-1 < 400
-1 < Connection: close
-1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:40 GMT
-1 < Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-22T19:19:40.4084162-02:00"}
-
-19:19:40.426 karate.env system property was:  
-19:19:40.491 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 98
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"d662e08c-0184-4aac-8d80-1519e40b018c","name":"Kingler","month":-3,"conclude":false}
-
-19:19:40.568 response time in milliseconds: 62,00
-1 < 400
-1 < Connection: close
-1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:40 GMT
-1 < Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-22T19:19:40.5610667-02:00"}
-
-19:19:40.584 karate.env system property was:  
-19:19:40.691 request:
-1 > POST http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 97
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"40f8bb42-caaa-482b-832c-319dcf922ab3","name":"Grimer","month":15,"conclude":false}
-
-19:19:40.754 response time in milliseconds: 46,59
-1 < 400
-1 < Connection: close
-1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:40 GMT
-1 < Transfer-Encoding: chunked
-{"title":"Month not be greater than 12!","status":400,"dateTime":"2020-11-22T19:19:40.7456492-02:00"}
-
-19:19:41.224 karate.env system property was:  
-19:19:41.255 request:
+16:22:24.344 karate.env system property was:  
+16:22:24.351 request:
 1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:41.293 response time in milliseconds: 35,21
+16:22:24.395 response time in milliseconds: 42,57
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:41 GMT
+1 < Date: Mon, 23 Nov 2020 18:22:23 GMT
 1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-[{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Machop","month":9,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false}]
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
 
-19:19:41.481 request:
-2 > PUT http://localhost:8080/gakushu/v1/modules/a33607c2-85b5-4daa-93fb-ef38ee164de0
+16:22:24.401 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:24.420 response time in milliseconds: 17,87
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:22:23 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:22:24.453 karate.env system property was:  
+16:22:24.453 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:24.522 response time in milliseconds: 75,61
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:22:23 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:22:24.538 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:24.557 response time in milliseconds: 14,56
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:22:23 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:22:24.595 karate.env system property was:  
+16:22:24.610 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:24.659 response time in milliseconds: 55,75
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:22:23 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:22:24.659 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:24.690 response time in milliseconds: 16,59
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:22:23 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:22:24.715 karate.env system property was:  
+16:22:24.722 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:24.757 response time in milliseconds: 42,72
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:22:23 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:22:24.773 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:24.809 response time in milliseconds: 30,53
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:22:23 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:22:24.851 karate.env system property was:  
+16:22:24.855 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:24.942 response time in milliseconds: 86,43
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:22:24 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:22:24.947 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:24.971 response time in milliseconds: 23,19
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:22:24 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:22:24.995 karate.env system property was:  
+16:22:25.009 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:25.076 response time in milliseconds: 63,06
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:22:24 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:22:25.086 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:22:25.148 response time in milliseconds: 60,79
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:22:24 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+ Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":true},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":false},{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false}]
+
+16:19:28.528 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/630c7991-0c2d-46c8-9ecf-5eb5245980e7
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
 2 > Content-Length: 97
 2 > Content-Type: application/json; charset=UTF-8
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"e049960e-0513-47b3-8eef-8162e050539f","name":"Scyther","month":5,"conclude":false}
+{"externalId":"7de39d8b-1cea-428f-bdaf-089541257db9","name":"Jolteon","month":5,"conclude":false}
 
-19:19:41.631 response time in milliseconds: 135,64
+16:19:28.626 response time in milliseconds: 92,53
 2 < 204
 2 < Connection: keep-alive
-2 < Date: Sun, 22 Nov 2020 21:19:41 GMT
+2 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 2 < Keep-Alive: timeout=60
 
-19:19:41.635 request:
-3 > GET http://localhost:8080/gakushu/v1/modules/a33607c2-85b5-4daa-93fb-ef38ee164de0
+16:19:28.629 request:
+3 > GET http://localhost:8080/gakushu/v1/modules/630c7991-0c2d-46c8-9ecf-5eb5245980e7
 3 > Accept-Encoding: gzip,deflate
 3 > Connection: Keep-Alive
 3 > Host: localhost:8080
 3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:41.659 response time in milliseconds: 22,67
+16:19:28.658 response time in milliseconds: 27,84
 3 < 200
 3 < Connection: keep-alive
 3 < Content-Type: application/json
-3 < Date: Sun, 22 Nov 2020 21:19:41 GMT
+3 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 3 < Keep-Alive: timeout=60
 3 < Transfer-Encoding: chunked
-{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false}
+{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false}
 
-19:19:41.690 karate.env system property was:  
-19:19:41.699 request:
+16:19:28.681 karate.env system property was:  
+16:19:28.684 request:
 1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:41.769 response time in milliseconds: 66,85
+16:19:28.724 response time in milliseconds: 38,24
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:41 GMT
+1 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-[{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false}]
+[{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":false},{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false}]
 
-19:19:41.931 request:
-2 > PUT http://localhost:8080/gakushu/v1/modules/584fc660-1002-46d6-a43a-87af1a3474df
+16:19:28.755 request:
+2 > PATCH http://localhost:8080/gakushu/v1/modules/487b1262-619f-49c0-bd00-ace0453e79fb
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Content-Length: 65
+2 > Content-Length: 17
 2 > Content-Type: application/json; charset=UTF-8
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":null,"name":"Exeggcute","month":2,"conclude":false}
+{"conclude":true}
 
-19:19:41.962 response time in milliseconds: 17,07
-2 < 400
-2 < Connection: close
-2 < Content-Type: application/json
-2 < Date: Sun, 22 Nov 2020 21:19:41 GMT
-2 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"externalId","message":"externalId not be null"}],"dateTime":"2020-11-22T19:19:41.9472928-02:00"}
+16:19:28.840 response time in milliseconds: 83,92
+2 < 204
+2 < Connection: keep-alive
+2 < Date: Mon, 23 Nov 2020 18:19:28 GMT
+2 < Keep-Alive: timeout=60
 
-19:19:41.994 karate.env system property was:  
-19:19:41.994 request:
+16:19:28.853 request:
+3 > GET http://localhost:8080/gakushu/v1/modules/487b1262-619f-49c0-bd00-ace0453e79fb
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:28.882 response time in milliseconds: 27,81
+3 < 200
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Mon, 23 Nov 2020 18:19:28 GMT
+3 < Keep-Alive: timeout=60
+3 < Transfer-Encoding: chunked
+{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}
+
+16:19:28.898 karate.env system property was:  
+16:19:28.902 request:
 1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:42.038 response time in milliseconds: 38,04
+16:19:28.936 response time in milliseconds: 33,07
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:41 GMT
+1 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-[{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false}]
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
 
-19:19:42.116 request:
-2 > PUT http://localhost:8080/gakushu/v1/modules/584fc660-1002-46d6-a43a-87af1a3474df
+16:19:29.037 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 63
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":null,"name":"Seaking","month":4,"conclude":false}
+
+16:19:29.037 response time in milliseconds: 5,18
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:28 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"fields":[{"name":"externalId","message":"externalId not be null"}],"dateTime":"2020-11-23T16:19:29.0376497-02:00"}
+
+16:19:29.053 karate.env system property was:  
+16:19:29.053 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:29.085 response time in milliseconds: 21,67
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:28 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:29.125 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
 2 > Content-Length: 92
 2 > Content-Type: application/json; charset=UTF-8
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"62620d2f-6456-451c-9763-1b6988997ab2","name":null,"month":6,"conclude":false}
+{"externalId":"5d0ddfdc-6788-4c8c-a855-92c701d413f8","name":null,"month":4,"conclude":false}
 
-19:19:42.116 response time in milliseconds: 8,28
+16:19:29.129 response time in milliseconds: 4,76
 2 < 400
 2 < Connection: close
 2 < Content-Type: application/json
-2 < Date: Sun, 22 Nov 2020 21:19:41 GMT
+2 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 2 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-22T19:19:42.1163356-02:00"}
+{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-23T16:19:29.128905-02:00"}
 
-19:19:42.147 karate.env system property was:  
-19:19:42.147 request:
+16:19:29.129 karate.env system property was:  
+16:19:29.145 request:
 1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:42.191 response time in milliseconds: 32,20
+16:19:29.169 response time in milliseconds: 19,44
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:41 GMT
+1 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-[{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false}]
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
 
-19:19:42.265 request:
-2 > PUT http://localhost:8080/gakushu/v1/modules/584fc660-1002-46d6-a43a-87af1a3474df
+16:19:29.202 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Content-Length: 92
+2 > Content-Length: 93
 2 > Content-Type: application/json; charset=UTF-8
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"2b6481df-b9d5-4618-894d-5d101dc82ef9","name":"  ","month":2,"conclude":false}
+{"externalId":"c8687e66-cf7b-440d-aea2-8a5848e86694","name":"  ","month":10,"conclude":false}
 
-19:19:42.265 response time in milliseconds: 9,38
+16:19:29.202 response time in milliseconds: 5,34
 2 < 400
 2 < Connection: close
 2 < Content-Type: application/json
-2 < Date: Sun, 22 Nov 2020 21:19:41 GMT
+2 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 2 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-22T19:19:42.265584-02:00"}
+{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-23T16:19:29.2020295-02:00"}
 
-19:19:42.312 karate.env system property was:  
-19:19:42.328 request:
+16:19:29.217 karate.env system property was:  
+16:19:29.233 request:
 1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:42.406 response time in milliseconds: 77,70
+16:19:29.266 response time in milliseconds: 32,14
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:42 GMT
+1 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-[{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false}]
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
 
-19:19:42.500 request:
-2 > PUT http://localhost:8080/gakushu/v1/modules/584fc660-1002-46d6-a43a-87af1a3474df
+16:19:29.328 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Content-Length: 102
+2 > Content-Length: 101
 2 > Content-Type: application/json; charset=UTF-8
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"d440191a-dd1b-4d71-a9d7-84a37ea97134","name":"Bulbasaur","month":null,"conclude":false}
+{"externalId":"1dfd9a17-ea2c-4b44-b0e9-459cb6033a04","name":"Squirtle","month":null,"conclude":false}
 
-19:19:42.516 response time in milliseconds: 6,10
+16:19:29.328 response time in milliseconds: 5,08
 2 < 400
 2 < Connection: close
 2 < Content-Type: application/json
-2 < Date: Sun, 22 Nov 2020 21:19:42 GMT
+2 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 2 < Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"month","message":"month not be null"}],"dateTime":"2020-11-22T19:19:42.5007366-02:00"}
+{"title":"Invalid fields!","status":400,"fields":[{"name":"month","message":"month not be null"}],"dateTime":"2020-11-23T16:19:29.3285784-02:00"}
 
-19:19:42.531 karate.env system property was:  
-19:19:42.531 request:
+16:19:29.344 karate.env system property was:  
+16:19:29.344 request:
 1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:42.571 response time in milliseconds: 25,73
+16:19:29.387 response time in milliseconds: 29,08
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:42 GMT
+1 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-[{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false}]
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
 
-19:19:42.619 request:
-2 > PUT http://localhost:8080/gakushu/v1/modules/584fc660-1002-46d6-a43a-87af1a3474df
-2 > Accept-Encoding: gzip,deflate
-2 > Connection: Keep-Alive
-2 > Content-Length: 96
-2 > Content-Type: application/json; charset=UTF-8
-2 > Host: localhost:8080
-2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"723e5014-32ec-4c89-b14f-5c597175fafd","name":"Cubone","month":0,"conclude":false}
-
-19:19:42.665 response time in milliseconds: 31,80
-2 < 400
-2 < Connection: close
-2 < Content-Type: application/json
-2 < Date: Sun, 22 Nov 2020 21:19:42 GMT
-2 < Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-22T19:19:42.663774-02:00"}
-
-19:19:42.674 karate.env system property was:  
-19:19:42.674 request:
-1 > GET http://localhost:8080/gakushu/v1/modules
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: localhost:8080
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-
-19:19:42.729 response time in milliseconds: 43,24
-1 < 200
-1 < Connection: keep-alive
-1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:42 GMT
-1 < Keep-Alive: timeout=60
-1 < Transfer-Encoding: chunked
-[{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false}]
-
-19:19:42.774 request:
-2 > PUT http://localhost:8080/gakushu/v1/modules/584fc660-1002-46d6-a43a-87af1a3474df
+16:19:29.418 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
 2 > Content-Length: 97
 2 > Content-Type: application/json; charset=UTF-8
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"4fe924e5-5848-4a39-8159-8f1d16fffb93","name":"Machop","month":-3,"conclude":false}
+{"externalId":"e88d7d91-2990-45d8-bd35-5db0234c46b6","name":"Kingler","month":0,"conclude":false}
 
-19:19:42.810 response time in milliseconds: 26,09
+16:19:29.454 response time in milliseconds: 21,44
 2 < 400
 2 < Connection: close
 2 < Content-Type: application/json
-2 < Date: Sun, 22 Nov 2020 21:19:42 GMT
+2 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 2 < Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-22T19:19:42.8045607-02:00"}
+{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-23T16:19:29.4526564-02:00"}
 
-19:19:42.817 karate.env system property was:  
-19:19:42.833 request:
+16:19:29.463 karate.env system property was:  
+16:19:29.463 request:
 1 > GET http://localhost:8080/gakushu/v1/modules
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:42.899 response time in milliseconds: 61,28
+16:19:29.488 response time in milliseconds: 20,72
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Sun, 22 Nov 2020 21:19:42 GMT
+1 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 1 < Keep-Alive: timeout=60
 1 < Transfer-Encoding: chunked
-[{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false},{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Scyther","month":5,"conclude":false}]
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
 
-19:19:42.954 request:
-2 > PUT http://localhost:8080/gakushu/v1/modules/584fc660-1002-46d6-a43a-87af1a3474df
+16:19:29.519 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Content-Length: 100
+2 > Content-Length: 101
 2 > Content-Type: application/json; charset=UTF-8
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"22d69237-cf0f-4939-ac37-85de6e612a92","name":"Lickitung","month":15,"conclude":false}
+{"externalId":"babbb25e-ad12-47f8-a05e-f8eafa661c42","name":"Tentacruel","month":-3,"conclude":false}
 
-19:19:42.993 response time in milliseconds: 29,18
+16:19:29.548 response time in milliseconds: 22,12
 2 < 400
 2 < Connection: close
 2 < Content-Type: application/json
-2 < Date: Sun, 22 Nov 2020 21:19:42 GMT
+2 < Date: Mon, 23 Nov 2020 18:19:28 GMT
 2 < Transfer-Encoding: chunked
-{"title":"Month not be greater than 12!","status":400,"dateTime":"2020-11-22T19:19:42.987418-02:00"}
+{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-23T16:19:29.5455203-02:00"}
+
+16:19:29.558 karate.env system property was:  
+16:19:29.564 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:29.593 response time in milliseconds: 28,10
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:28 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:29.635 request:
+2 > PUT http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 96
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"3b9f83dd-10e3-4b07-b34f-4f0d314c1778","name":"Ekans","month":15,"conclude":false}
+
+16:19:29.663 response time in milliseconds: 19,82
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Month not be greater than 12!","status":400,"dateTime":"2020-11-23T16:19:29.6615403-02:00"}
+
+16:19:29.705 karate.env system property was:  
+16:19:29.705 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:29.739 response time in milliseconds: 19,96
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:29.850 request:
+2 > POST http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 316
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"9608d9c5-0569-4f79-b8c5-f305d0bdf2e9","title":"An Acceptable Time","content":"Ut sequi id voluptas. Quia fugiat sed architecto voluptate ut error iusto. Reprehenderit excepturi numquam id soluta sit reprehenderit. Accusantium et dolorem voluptatem animi. Distinctio voluptas qui dolorem itaque unde."}
+
+16:19:29.932 response time in milliseconds: 73,08
+2 < 201
+2 < Connection: keep-alive
+2 < Content-Length: 0
+2 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+2 < Keep-Alive: timeout=60
+2 < Location: /v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks/9608d9c5-0569-4f79-b8c5-f305d0bdf2e9
+
+16:19:29.932 request:
+3 > POST http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 316
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"9608d9c5-0569-4f79-b8c5-f305d0bdf2e9","title":"An Acceptable Time","content":"Ut sequi id voluptas. Quia fugiat sed architecto voluptate ut error iusto. Reprehenderit excepturi numquam id soluta sit reprehenderit. Accusantium et dolorem voluptatem animi. Distinctio voluptas qui dolorem itaque unde."}
+
+16:19:29.987 response time in milliseconds: 50,68
+3 < 400
+3 < Connection: close
+3 < Content-Type: application/json
+3 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+3 < Transfer-Encoding: chunked
+{"title":"Invalid duplicated data","status":400,"fields":[{"name":"","message":"Invalid duplicated data"},{"name":"externalId","message":"Invalid duplicated data"}],"dateTime":"2020-11-23T16:19:29.9853595-02:00"}
+
+16:19:29.998 karate.env system property was:  
+16:19:29.999 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.024 response time in milliseconds: 21,54
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:30.102 request:
+2 > POST http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 174
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":null,"title":"I Know Why the Caged Bird Sings","content":"Dolorem veniam placeat nesciunt rem hic. Tempora sint corrupti. Aliquam qui est ipsam et autem sint."}
+
+16:19:30.170 response time in milliseconds: 59,91
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"dateTime":"2020-11-23T16:19:30.1672127-02:00"}
+
+16:19:30.182 karate.env system property was:  
+16:19:30.182 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.227 response time in milliseconds: 31,22
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:30.289 request:
+2 > POST http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 265
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"d43c21cc-f259-4686-a578-7cce57be3caf","title":null,"content":"Officiis esse ut et sed consectetur quia at. Laudantium perspiciatis tempora necessitatibus repellat. Aut expedita dolores odit vel corrupti sint quod. Quisquam est est dolorum nesciunt."}
+
+16:19:30.318 response time in milliseconds: 25,49
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"dateTime":"2020-11-23T16:19:30.3160813-02:00"}
+
+16:19:30.331 karate.env system property was:  
+16:19:30.331 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.356 response time in milliseconds: 21,56
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:30.389 request:
+2 > POST http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 287
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"6967650b-57eb-44e9-86ef-148fc2262f54","title":"  ","content":"Explicabo explicabo voluptas saepe. Et voluptatum voluptatum voluptas placeat perspiciatis. Dolor aliquam cupiditate odit aspernatur molestiae. Illo et voluptas in quas quis consequatur vitae. Iste optio vel."}
+
+16:19:30.428 response time in milliseconds: 27,47
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"dateTime":"2020-11-23T16:19:30.4266604-02:00"}
+
+16:19:30.438 karate.env system property was:  
+16:19:30.440 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.473 response time in milliseconds: 32,10
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:30.569 request:
+2 > POST http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 95
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"ca09ac99-060f-4d1b-8585-0d5b15e551fa","title":"A Scanner Darkly","content":null}
+
+16:19:30.611 response time in milliseconds: 32,19
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"dateTime":"2020-11-23T16:19:30.608141-02:00"}
+
+16:19:30.624 karate.env system property was:  
+16:19:30.627 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.657 response time in milliseconds: 29,01
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:29 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:30.690 request:
+2 > POST http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 95
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"5de7c133-e23d-4428-8ae8-ded6a7fa84c2","title":"A Catskill Eagle","content":"  "}
+
+16:19:30.720 response time in milliseconds: 24,75
+2 < 400
+2 < Connection: close
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"dateTime":"2020-11-23T16:19:30.7185162-02:00"}
+
+16:19:30.747 karate.env system property was:  
+16:19:30.747 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.781 response time in milliseconds: 21,44
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:30.781 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.845 response time in milliseconds: 59,14
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[{"externalId":"9608d9c5-0569-4f79-b8c5-f305d0bdf2e9","title":"An Acceptable Time","content":"Ut sequi id voluptas. Quia fugiat sed architecto voluptate ut error iusto. Reprehenderit excepturi numquam id soluta sit reprehenderit. Accusantium et dolorem voluptatem animi. Distinctio voluptas qui dolorem itaque unde.","module":{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true}}]
+
+16:19:30.858 request:
+3 > DELETE http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks/9608d9c5-0569-4f79-b8c5-f305d0bdf2e9
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.932 response time in milliseconds: 71,19
+3 < 204
+3 < Connection: keep-alive
+3 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+3 < Keep-Alive: timeout=60
+
+16:19:30.932 request:
+4 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks/9608d9c5-0569-4f79-b8c5-f305d0bdf2e9
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Host: localhost:8080
+4 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.945 response time in milliseconds: 9,93
+4 < 404
+4 < Connection: keep-alive
+4 < Content-Length: 0
+4 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+4 < Keep-Alive: timeout=60
+
+16:19:30.955 karate.env system property was:  
+16:19:30.957 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.976 response time in milliseconds: 17,77
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:30.979 request:
+2 > DELETE http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks/cb645023-fa58-491f-a3ec-4cc04e284a43
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:30.991 response time in milliseconds: 9,71
+2 < 404
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"title":"Wordbook not found","status":404,"dateTime":"2020-11-23T16:19:30.98828-02:00"}
+
+16:19:31.047 karate.env system property was:  
+16:19:31.047 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.078 response time in milliseconds: 22,78
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:31.086 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.127 response time in milliseconds: 39,37
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:19:31.189 karate.env system property was:  
+16:19:31.189 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.221 response time in milliseconds: 28,54
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:31.221 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.243 response time in milliseconds: 9,67
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:19:31.258 karate.env system property was:  
+16:19:31.258 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.283 response time in milliseconds: 21,18
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:31.284 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.295 response time in milliseconds: 8,55
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:19:31.322 karate.env system property was:  
+16:19:31.325 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.380 response time in milliseconds: 54,44
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:31.380 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.395 response time in milliseconds: 9,58
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:19:31.408 karate.env system property was:  
+16:19:31.411 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.438 response time in milliseconds: 26,41
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:31.444 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.459 response time in milliseconds: 12,73
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:19:31.478 karate.env system property was:  
+16:19:31.486 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.532 response time in milliseconds: 45,76
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:31.533 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.551 response time in milliseconds: 15,17
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+16:19:31.578 karate.env system property was:  
+16:19:31.579 request:
+1 > GET http://localhost:8080/gakushu/v1/modules
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.610 response time in milliseconds: 28,78
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+[{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Jolteon","month":5,"conclude":false},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":true}]
+
+16:19:31.614 request:
+2 > GET http://localhost:8080/gakushu/v1/modules/840e571c-042a-4a56-ba6f-47aadf5498c9/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+16:19:31.630 response time in milliseconds: 14,79
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 18:19:30 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[]
+
+0/gakushu/v1/modules/035c6c50-970c-4135-87e1-3ec087fbc586/wordbooks
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+
+15:31:42.634 response time in milliseconds: 39,64
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Mon, 23 Nov 2020 17:31:42 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[{"externalId":"6c59a1c3-29f7-48fb-b1ef-4a94742646c2","title":"That Hideous Strength","content":"Ducimus officia consequatur inventore recusandae est et est. Culpa soluta mollitia aspernatur sit vitae at necessitatibus. Sunt cumque sit consequatur facilis. Exercitationem deleniti qui repellat omnis.","module":{"id":3,"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Ekans","month":6,"conclude":false,"wordbooks":[{"id":17,"externalId":"6c59a1c3-29f7-48fb-b1ef-4a94742646c2","title":"That Hideous Strength","content":"Ducimus officia consequatur inventore recusandae est et est. Culpa soluta mollitia aspernatur sit vitae at necessitatibus. Sunt cumque sit consequatur facilis. Exercitationem deleniti qui repellat omnis.","createAt":"2020-11-23T15:31:40.268127-02:00","updatedAt":"2020-11-23T15:31:41.564112-02:00"}],"createdAt":"2020-11-22T14:22:40.43051-02:00","updatedAt":"2020-11-22T20:05:16.56594-02:00"}}]
+
+15:31:42.674 request:
+3 > PUT http://localhost:8080/gakushu/v1/modules/035c6c50-970c-4135-87e1-3ec087fbc586/wordbooks/6c59a1c3-29f7-48fb-b1ef-4a94742646c2
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 92
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
+{"externalId":"6c59a1c3-29f7-48fb-b1ef-4a94742646c2","title":"Tiger! Tiger!","content":"  "}
+
+15:31:42.735 response time in milliseconds: 52,11
+3 < 400
+3 < Connection: close
+3 < Content-Type: application/json
+3 < Date: Mon, 23 Nov 2020 17:31:42 GMT
+3 < Transfer-Encoding: chunked
+{"title":"Invalid fields!","status":400,"dateTime":"2020-11-23T15:31:42.733806-02:00"}
 

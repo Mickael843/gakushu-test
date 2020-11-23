@@ -1,0 +1,22 @@
+<testsuite failures="0" name="src/test/java/gakushu/wordbooks/create/wordbook-create.feature" skipped="0" tests="1" time="2.034276">
+  <testcase classname="src.test.java.gakushu.wordbooks.create.wordbook-create" name="A valid payload must create a Wordbook for one Module only once" time="2.034276">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+* def externalId = generate.uuid() ........................................ passed
+* def expectedLocation = '/v1/modules/' + module.externalId + '/wordbooks/' + externalId . passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+And path '/', module.externalId, '/wordbooks' ............................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match responseHeaders['Location'][0] == expectedLocation .............. passed
+Given request payload ..................................................... passed
+And path '/', module.externalId, '/wordbooks' ............................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid duplicated data', status:400 } . passed</system-out>
+  </testcase>
+</testsuite>

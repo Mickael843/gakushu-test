@@ -46,7 +46,7 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2020-11-22 07:19:40 PM</div>
+                <div id="nav-date">2020-11-23 04:19:27 PM</div>
                         
       
                 <div class="nav-container">
@@ -91,7 +91,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">A valid payload must create a Module only once </span>
                         </div>
-                        <div class="scenario-time passed">ms: 1609</div>
+                        <div class="scenario-time passed">ms: 1510</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[1:7]bg">
@@ -105,9 +105,9 @@
                             <div class="step-ref bg-step">1</div>
                             <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">5</div>
                     </div>
-                    <div class="preformatted" data-parent="1">19:19:37.565 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="1">16:19:24.616 karate.env system property was:</div>
                     <div class="step-row" data-parent="[1:7]bg">
                         <div class="step-container" id="2">
                             <div class="step-ref bg-step">2</div>
@@ -120,7 +120,7 @@
                             <div class="step-ref passed">3</div>
                             <div class="step-cell passed">* def externalId = generate.uuid()</div>
                         </div>
-                        <div class="time-cell passed">410</div>
+                        <div class="time-cell passed">402</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="4">
@@ -134,7 +134,7 @@
                             <div class="step-ref passed">5</div>
                             <div class="step-cell passed">* def payload =</div>
                         </div>
-                        <div class="time-cell passed">558</div>
+                        <div class="time-cell passed">540</div>
                     </div>
                     <div class="preformatted" data-parent="5">{
   externalId: '#(externalId)',
@@ -154,25 +154,25 @@
                             <div class="step-ref passed">7</div>
                             <div class="step-cell passed">When method post</div>
                         </div>
-                        <div class="time-cell passed">504</div>
+                        <div class="time-cell passed">508</div>
                     </div>
-                    <div class="preformatted" data-parent="7">19:19:39.009 request:
+                    <div class="preformatted" data-parent="7">16:19:26.081 request:
 1 &gt; POST http://localhost:8080/gakushu/v1/modules
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 96
+1 &gt; Content-Length: 100
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false}
+{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false}
 
-19:19:39.125 response time in milliseconds: 122,50
+16:19:26.231 response time in milliseconds: 129,60
 1 &lt; 201
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 0
-1 &lt; Date: Sun, 22 Nov 2020 21:19:39 GMT
+1 &lt; Date: Mon, 23 Nov 2020 18:19:26 GMT
 1 &lt; Keep-Alive: timeout=60
-1 &lt; Location: /gakushu/v1/modules/cee1c6c3-24a2-437e-9381-511ea7322255</div>
+1 &lt; Location: /gakushu/v1/modules/96c03288-5ebd-440f-9d82-ca7c4c491ff9</div>
                     <div class="step-row">
                         <div class="step-container" id="8">
                             <div class="step-ref passed">8</div>
@@ -185,7 +185,7 @@
                             <div class="step-ref passed">9</div>
                             <div class="step-cell passed">And match responseHeaders['Location'][0] == expectedLocation</div>
                         </div>
-                        <div class="time-cell passed">4</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="10">
@@ -199,25 +199,25 @@
                             <div class="step-ref passed">11</div>
                             <div class="step-cell passed">When method post</div>
                         </div>
-                        <div class="time-cell passed">109</div>
+                        <div class="time-cell passed">32</div>
                     </div>
-                    <div class="preformatted" data-parent="11">19:19:39.143 request:
+                    <div class="preformatted" data-parent="11">16:19:26.231 request:
 2 &gt; POST http://localhost:8080/gakushu/v1/modules
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
-2 &gt; Content-Length: 96
+2 &gt; Content-Length: 100
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Host: localhost:8080
 2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false}
+{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false}
 
-19:19:39.255 response time in milliseconds: 104,06
+16:19:26.270 response time in milliseconds: 25,17
 2 &lt; 400
 2 &lt; Connection: close
 2 &lt; Content-Type: application/json
-2 &lt; Date: Sun, 22 Nov 2020 21:19:39 GMT
+2 &lt; Date: Mon, 23 Nov 2020 18:19:26 GMT
 2 &lt; Transfer-Encoding: chunked
-{"title":"Invalid duplicated data","status":400,"fields":[{"name":"","message":"Invalid duplicated data"},{"name":"externalId","message":"Invalid duplicated data"},{"name":"name","message":"Invalid duplicated data"}],"dateTime":"2020-11-22T19:19:39.2479334-02:00"}</div>
+{"title":"Invalid duplicated data","status":400,"fields":[{"name":"","message":"Invalid duplicated data"},{"name":"externalId","message":"Invalid duplicated data"},{"name":"name","message":"Invalid duplicated data"}],"dateTime":"2020-11-23T16:19:26.2643378-02:00"}</div>
                     <div class="step-row">
                         <div class="step-container" id="12">
                             <div class="step-ref passed">12</div>
@@ -239,7 +239,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario: [2:31]</span><span class="scenario-name">get all modules and then get the first module by id </span>
                         </div>
-                        <div class="scenario-time passed">ms: 196</div>
+                        <div class="scenario-time passed">ms: 136</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[2:31]bg">
@@ -255,36 +255,36 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="14">19:19:39.283 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="14">16:19:26.334 karate.env system property was:</div>
                     <div class="step-row" data-parent="[2:31]bg">
                         <div class="step-container" id="15">
                             <div class="step-ref bg-step">15</div>
                             <div class="step-cell passed">* def generate = Java.type('gakushu.DataGenerator')</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="16">
                             <div class="step-ref passed">16</div>
                             <div class="step-cell passed">When method get</div>
                         </div>
-                        <div class="time-cell passed">121</div>
+                        <div class="time-cell passed">65</div>
                     </div>
-                    <div class="preformatted" data-parent="16">19:19:39.299 request:
+                    <div class="preformatted" data-parent="16">16:19:26.341 request:
 1 &gt; GET http://localhost:8080/gakushu/v1/modules
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:39.414 response time in milliseconds: 107,14
+16:19:26.401 response time in milliseconds: 57,46
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 22 Nov 2020 21:19:39 GMT
+1 &lt; Date: Mon, 23 Nov 2020 18:19:26 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Transfer-Encoding: chunked
-[{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Machop","month":9,"conclude":false},{"externalId":"584fc660-1002-46d6-a43a-87af1a3474df","name":"Magmar","month":4,"conclude":false},{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Onix","month":3,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Ninetales","month":5,"conclude":false},{"externalId":"12ef3c57-54a4-4c9e-a5fa-e7235c85bf4e","name":"Machoke","month":4,"conclude":false},{"externalId":"cee1c6c3-24a2-437e-9381-511ea7322255","name":"Tauros","month":3,"conclude":false}]</div>
+[{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Ekans","month":6,"conclude":false},{"externalId":"630c7991-0c2d-46c8-9ecf-5eb5245980e7","name":"Hypno","month":1,"conclude":true},{"externalId":"487b1262-619f-49c0-bd00-ace0453e79fb","name":"Metapod","month":3,"conclude":false},{"externalId":"840e571c-042a-4a56-ba6f-47aadf5498c9","name":"Exeggcute","month":6,"conclude":true},{"externalId":"98c7d9f7-9438-40dc-b240-6790a9f37d74","name":"Tentacruel","month":2,"conclude":false},{"externalId":"aa4de82b-b2bc-4d9c-81d7-f312b7e4b4a9","name":"Rapidash","month":1,"conclude":false},{"externalId":"6742426e-79c8-4e25-8c47-d8a995f61a59","name":"Diglett","month":4,"conclude":false},{"externalId":"96c03288-5ebd-440f-9d82-ca7c4c491ff9","name":"Weepinbell","month":2,"conclude":false}]</div>
                     <div class="step-row">
                         <div class="step-container" id="17">
                             <div class="step-ref passed">17</div>
@@ -297,37 +297,37 @@
                             <div class="step-ref passed">18</div>
                             <div class="step-cell passed">* def first = response[0]</div>
                         </div>
-                        <div class="time-cell passed">27</div>
+                        <div class="time-cell passed">31</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="19">
                             <div class="step-ref passed">19</div>
                             <div class="step-cell passed">Given path '/', first.externalId</div>
                         </div>
-                        <div class="time-cell passed">23</div>
+                        <div class="time-cell passed">17</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="20">
                             <div class="step-ref passed">20</div>
                             <div class="step-cell passed">When method get</div>
                         </div>
-                        <div class="time-cell passed">23</div>
+                        <div class="time-cell passed">21</div>
                     </div>
-                    <div class="preformatted" data-parent="20">19:19:39.468 request:
-2 &gt; GET http://localhost:8080/gakushu/v1/modules/a33607c2-85b5-4daa-93fb-ef38ee164de0
+                    <div class="preformatted" data-parent="20">16:19:26.448 request:
+2 &gt; GET http://localhost:8080/gakushu/v1/modules/035c6c50-970c-4135-87e1-3ec087fbc586
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
 2 &gt; Host: localhost:8080
 2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
 
-19:19:39.488 response time in milliseconds: 18,92
+16:19:26.471 response time in milliseconds: 16,30
 2 &lt; 200
 2 &lt; Connection: keep-alive
 2 &lt; Content-Type: application/json
-2 &lt; Date: Sun, 22 Nov 2020 21:19:39 GMT
+2 &lt; Date: Mon, 23 Nov 2020 18:19:26 GMT
 2 &lt; Keep-Alive: timeout=60
 2 &lt; Transfer-Encoding: chunked
-{"externalId":"a33607c2-85b5-4daa-93fb-ef38ee164de0","name":"Machop","month":9,"conclude":false}</div>
+{"externalId":"035c6c50-970c-4135-87e1-3ec087fbc586","name":"Ekans","month":6,"conclude":false}</div>
                     <div class="step-row">
                         <div class="step-container" id="21">
                             <div class="step-ref passed">21</div>
@@ -342,7 +342,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.1:61]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 307</div>
+                        <div class="scenario-time passed">ms: 284</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.1:61]bg">
@@ -358,7 +358,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="22">19:19:39.515 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="22">16:19:26.488 karate.env system property was:</div>
                     <div class="step-row" data-parent="[3.1:61]bg">
                         <div class="step-container" id="23">
                             <div class="step-ref bg-step">23</div>
@@ -378,14 +378,14 @@
                             <div class="step-ref passed">25</div>
                             <div class="step-cell passed">And path 'v1/modules'</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">7</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="26">
                             <div class="step-ref passed">26</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">282</div>
+                        <div class="time-cell passed">259</div>
                     </div>
                     <div class="preformatted" data-parent="26">{
   externalId: null,
@@ -398,25 +398,25 @@
                             <div class="step-ref passed">27</div>
                             <div class="step-cell passed">When method post</div>
                         </div>
-                        <div class="time-cell passed">12</div>
+                        <div class="time-cell passed">11</div>
                     </div>
-                    <div class="preformatted" data-parent="27">19:19:39.813 request:
+                    <div class="preformatted" data-parent="27">16:19:26.769 request:
 1 &gt; POST http://localhost:8080/gakushu/v1/modules
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 61
+1 &gt; Content-Length: 63
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":null,"name":"Eevee","month":7,"conclude":false}
+{"externalId":null,"name":"Haunter","month":8,"conclude":false}
 
-19:19:39.813 response time in milliseconds: 7,59
+16:19:26.769 response time in milliseconds: 5,35
 1 &lt; 400
 1 &lt; Connection: close
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 22 Nov 2020 21:19:39 GMT
+1 &lt; Date: Mon, 23 Nov 2020 18:19:26 GMT
 1 &lt; Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"externalId","message":"externalId not be null"}],"dateTime":"2020-11-22T19:19:39.8136566-02:00"}</div>
+{"title":"Invalid fields!","status":400,"fields":[{"name":"externalId","message":"externalId not be null"}],"dateTime":"2020-11-23T16:19:26.7699345-02:00"}</div>
                     <div class="step-row">
                         <div class="step-container" id="28">
                             <div class="step-ref passed">28</div>
@@ -438,7 +438,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.2:62]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 94</div>
+                        <div class="scenario-time passed">ms: 142</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.2:62]bg">
@@ -454,7 +454,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="30">19:19:39.844 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="30">16:19:26.785 karate.env system property was:</div>
                     <div class="step-row" data-parent="[3.2:62]bg">
                         <div class="step-container" id="31">
                             <div class="step-ref bg-step">31</div>
@@ -481,7 +481,7 @@
                             <div class="step-ref passed">34</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">79</div>
+                        <div class="time-cell passed">125</div>
                     </div>
                     <div class="preformatted" data-parent="34">{
   externalId: #(generate.uuid()),
@@ -494,25 +494,25 @@
                             <div class="step-ref passed">35</div>
                             <div class="step-cell passed">When method post</div>
                         </div>
-                        <div class="time-cell passed">14</div>
+                        <div class="time-cell passed">16</div>
                     </div>
-                    <div class="preformatted" data-parent="35">19:19:39.923 request:
+                    <div class="preformatted" data-parent="35">16:19:26.910 request:
 1 &gt; POST http://localhost:8080/gakushu/v1/modules
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 93
+1 &gt; Content-Length: 92
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"f6f623e9-41d2-4614-a9e5-e574b13154d6","name":null,"month":10,"conclude":false}
+{"externalId":"a4a384ae-3ec0-4dd7-9ef8-fc1097565d10","name":null,"month":2,"conclude":false}
 
-19:19:39.938 response time in milliseconds: 9,45
+16:19:26.935 response time in milliseconds: 10,62
 1 &lt; 400
 1 &lt; Connection: close
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 22 Nov 2020 21:19:39 GMT
+1 &lt; Date: Mon, 23 Nov 2020 18:19:26 GMT
 1 &lt; Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-22T19:19:39.9230376-02:00"}</div>
+{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-23T16:19:26.9304019-02:00"}</div>
                     <div class="step-row">
                         <div class="step-container" id="36">
                             <div class="step-ref passed">36</div>
@@ -534,7 +534,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.3:63]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 113</div>
+                        <div class="scenario-time passed">ms: 137</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.3:63]bg">
@@ -550,7 +550,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="38">19:19:39.954 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="38">16:19:26.946 karate.env system property was:</div>
                     <div class="step-row" data-parent="[3.3:63]bg">
                         <div class="step-container" id="39">
                             <div class="step-ref bg-step">39</div>
@@ -577,7 +577,7 @@
                             <div class="step-ref passed">42</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">98</div>
+                        <div class="time-cell passed">125</div>
                     </div>
                     <div class="preformatted" data-parent="42">{
   externalId: #(generate.uuid()),
@@ -590,9 +590,9 @@
                             <div class="step-ref passed">43</div>
                             <div class="step-cell passed">When method post</div>
                         </div>
-                        <div class="time-cell passed">13</div>
+                        <div class="time-cell passed">10</div>
                     </div>
-                    <div class="preformatted" data-parent="43">19:19:40.064 request:
+                    <div class="preformatted" data-parent="43">16:19:27.071 request:
 1 &gt; POST http://localhost:8080/gakushu/v1/modules
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -600,15 +600,15 @@
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"661b62ae-1990-4184-a450-3d46a7545548","name":"  ","month":6,"conclude":false}
+{"externalId":"2b16f169-20fc-42ee-a84b-52e4518a863f","name":"  ","month":5,"conclude":false}
 
-19:19:40.064 response time in milliseconds: 6,86
+16:19:27.087 response time in milliseconds: 6,86
 1 &lt; 400
 1 &lt; Connection: close
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 22 Nov 2020 21:19:39 GMT
+1 &lt; Date: Mon, 23 Nov 2020 18:19:26 GMT
 1 &lt; Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-22T19:19:40.0647148-02:00"}</div>
+{"title":"Invalid fields!","status":400,"fields":[{"name":"name","message":"name not be null"}],"dateTime":"2020-11-23T16:19:27.0876069-02:00"}</div>
                     <div class="step-row">
                         <div class="step-container" id="44">
                             <div class="step-ref passed">44</div>
@@ -630,7 +630,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.4:64]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 136</div>
+                        <div class="scenario-time passed">ms: 105</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.4:64]bg">
@@ -646,7 +646,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="46">19:19:40.111 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="46">16:19:27.103 karate.env system property was:</div>
                     <div class="step-row" data-parent="[3.4:64]bg">
                         <div class="step-container" id="47">
                             <div class="step-ref bg-step">47</div>
@@ -659,7 +659,7 @@
                             <div class="step-ref passed">48</div>
                             <div class="step-cell passed">Given url 'http://localhost:8080/gakushu'</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="49">
@@ -673,7 +673,7 @@
                             <div class="step-ref passed">50</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">123</div>
+                        <div class="time-cell passed">92</div>
                     </div>
                     <div class="preformatted" data-parent="50">{
   externalId: #(generate.uuid()),
@@ -688,23 +688,23 @@
                         </div>
                         <div class="time-cell passed">11</div>
                     </div>
-                    <div class="preformatted" data-parent="51">19:19:40.236 request:
+                    <div class="preformatted" data-parent="51">16:19:27.196 request:
 1 &gt; POST http://localhost:8080/gakushu/v1/modules
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 100
+1 &gt; Content-Length: 102
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"fe1e037f-3acb-4372-9f80-ed81f8230161","name":"Diglett","month":null,"conclude":false}
+{"externalId":"0d36ed6d-5107-4a35-91cd-f0ab6d8361f6","name":"Hitmonlee","month":null,"conclude":false}
 
-19:19:40.236 response time in milliseconds: 6,87
+16:19:27.196 response time in milliseconds: 7,13
 1 &lt; 400
 1 &lt; Connection: close
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 22 Nov 2020 21:19:40 GMT
+1 &lt; Date: Mon, 23 Nov 2020 18:19:26 GMT
 1 &lt; Transfer-Encoding: chunked
-{"title":"Invalid fields!","status":400,"fields":[{"name":"month","message":"month not be null"}],"dateTime":"2020-11-22T19:19:40.2365926-02:00"}</div>
+{"title":"Invalid fields!","status":400,"fields":[{"name":"month","message":"month not be null"}],"dateTime":"2020-11-23T16:19:27.1969877-02:00"}</div>
                     <div class="step-row">
                         <div class="step-container" id="52">
                             <div class="step-ref passed">52</div>
@@ -717,7 +717,7 @@
                             <div class="step-ref passed">53</div>
                             <div class="step-cell passed">And match response contains { title:'Invalid fields!', status:400 }</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">1</div>
                     </div>
                 </div>
                 <div class="scenario">
@@ -726,7 +726,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.5:65]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 144</div>
+                        <div class="scenario-time passed">ms: 184</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.5:65]bg">
@@ -742,7 +742,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="54">19:19:40.267 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="54">16:19:27.232 karate.env system property was:</div>
                     <div class="step-row" data-parent="[3.5:65]bg">
                         <div class="step-container" id="55">
                             <div class="step-ref bg-step">55</div>
@@ -769,7 +769,7 @@
                             <div class="step-ref passed">58</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">83</div>
+                        <div class="time-cell passed">88</div>
                     </div>
                     <div class="preformatted" data-parent="58">{
   externalId: #(generate.uuid()),
@@ -782,25 +782,25 @@
                             <div class="step-ref passed">59</div>
                             <div class="step-cell passed">When method post</div>
                         </div>
-                        <div class="time-cell passed">60</div>
+                        <div class="time-cell passed">95</div>
                     </div>
-                    <div class="preformatted" data-parent="59">19:19:40.345 request:
+                    <div class="preformatted" data-parent="59">16:19:27.322 request:
 1 &gt; POST http://localhost:8080/gakushu/v1/modules
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 97
+1 &gt; Content-Length: 95
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"def372dc-f3f1-4f2d-bd3a-a7bfa6d63ec0","name":"Snorlax","month":0,"conclude":false}
+{"externalId":"a7a1cac8-0fc5-4306-beba-30d492a86732","name":"Arbok","month":0,"conclude":false}
 
-19:19:40.412 response time in milliseconds: 55,56
+16:19:27.417 response time in milliseconds: 85,97
 1 &lt; 400
 1 &lt; Connection: close
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 22 Nov 2020 21:19:40 GMT
+1 &lt; Date: Mon, 23 Nov 2020 18:19:27 GMT
 1 &lt; Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-22T19:19:40.4084162-02:00"}</div>
+{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-23T16:19:27.4106686-02:00"}</div>
                     <div class="step-row">
                         <div class="step-container" id="60">
                             <div class="step-ref passed">60</div>
@@ -822,7 +822,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.6:66]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 140</div>
+                        <div class="scenario-time passed">ms: 230</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.6:66]bg">
@@ -838,7 +838,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="62">19:19:40.426 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="62">16:19:27.435 karate.env system property was:</div>
                     <div class="step-row" data-parent="[3.6:66]bg">
                         <div class="step-container" id="63">
                             <div class="step-ref bg-step">63</div>
@@ -865,7 +865,7 @@
                             <div class="step-ref passed">66</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">73</div>
+                        <div class="time-cell passed">189</div>
                     </div>
                     <div class="preformatted" data-parent="66">{
   externalId: #(generate.uuid()),
@@ -878,9 +878,9 @@
                             <div class="step-ref passed">67</div>
                             <div class="step-cell passed">When method post</div>
                         </div>
-                        <div class="time-cell passed">66</div>
+                        <div class="time-cell passed">40</div>
                     </div>
-                    <div class="preformatted" data-parent="67">19:19:40.491 request:
+                    <div class="preformatted" data-parent="67">16:19:27.630 request:
 1 &gt; POST http://localhost:8080/gakushu/v1/modules
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -888,15 +888,15 @@
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"d662e08c-0184-4aac-8d80-1519e40b018c","name":"Kingler","month":-3,"conclude":false}
+{"externalId":"479957c1-eb36-4273-94fa-fd2de9186534","name":"Snorlax","month":-3,"conclude":false}
 
-19:19:40.568 response time in milliseconds: 62,00
+16:19:27.666 response time in milliseconds: 34,00
 1 &lt; 400
 1 &lt; Connection: close
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 22 Nov 2020 21:19:40 GMT
+1 &lt; Date: Mon, 23 Nov 2020 18:19:27 GMT
 1 &lt; Transfer-Encoding: chunked
-{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-22T19:19:40.5610667-02:00"}</div>
+{"title":"Month cannot be less than or equal to 0!","status":400,"dateTime":"2020-11-23T16:19:27.66064-02:00"}</div>
                     <div class="step-row">
                         <div class="step-container" id="68">
                             <div class="step-ref passed">68</div>
@@ -918,7 +918,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.7:67]</span><span class="scenario-name">Invalid fields must return error code 400 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 170</div>
+                        <div class="scenario-time passed">ms: 104</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.7:67]bg">
@@ -932,9 +932,9 @@
                             <div class="step-ref bg-step">70</div>
                             <div class="step-cell passed">* url 'http://localhost:8080/gakushu/v1/modules'</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">1</div>
                     </div>
-                    <div class="preformatted" data-parent="70">19:19:40.584 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="70">16:19:27.684 karate.env system property was:</div>
                     <div class="step-row" data-parent="[3.7:67]bg">
                         <div class="step-container" id="71">
                             <div class="step-ref bg-step">71</div>
@@ -947,7 +947,7 @@
                             <div class="step-ref passed">72</div>
                             <div class="step-cell passed">Given url 'http://localhost:8080/gakushu'</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="73">
@@ -961,7 +961,7 @@
                             <div class="step-ref passed">74</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">115</div>
+                        <div class="time-cell passed">66</div>
                     </div>
                     <div class="preformatted" data-parent="74">{
   externalId: #(generate.uuid()),
@@ -974,25 +974,25 @@
                             <div class="step-ref passed">75</div>
                             <div class="step-cell passed">When method post</div>
                         </div>
-                        <div class="time-cell passed">52</div>
+                        <div class="time-cell passed">35</div>
                     </div>
-                    <div class="preformatted" data-parent="75">19:19:40.691 request:
+                    <div class="preformatted" data-parent="75">16:19:27.758 request:
 1 &gt; POST http://localhost:8080/gakushu/v1/modules
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 97
+1 &gt; Content-Length: 99
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.1)
-{"externalId":"40f8bb42-caaa-482b-832c-319dcf922ab3","name":"Grimer","month":15,"conclude":false}
+{"externalId":"e56811a6-ce06-4e4a-86ad-d9dc1ce225e0","name":"Clefairy","month":15,"conclude":false}
 
-19:19:40.754 response time in milliseconds: 46,59
+16:19:27.790 response time in milliseconds: 29,88
 1 &lt; 400
 1 &lt; Connection: close
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sun, 22 Nov 2020 21:19:40 GMT
+1 &lt; Date: Mon, 23 Nov 2020 18:19:27 GMT
 1 &lt; Transfer-Encoding: chunked
-{"title":"Month not be greater than 12!","status":400,"dateTime":"2020-11-22T19:19:40.7456492-02:00"}</div>
+{"title":"Month not be greater than 12!","status":400,"dateTime":"2020-11-23T16:19:27.7848647-02:00"}</div>
                     <div class="step-row">
                         <div class="step-container" id="76">
                             <div class="step-ref passed">76</div>
@@ -1005,7 +1005,7 @@
                             <div class="step-ref passed">77</div>
                             <div class="step-cell passed">And match response contains { title:'Month not be greater than 12!', status:400 }</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                 </div>
             </div>

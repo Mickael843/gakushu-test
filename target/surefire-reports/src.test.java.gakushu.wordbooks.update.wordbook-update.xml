@@ -1,0 +1,436 @@
+<testsuite failures="0" name="src/test/java/gakushu/wordbooks/update/wordbook-update.feature" skipped="0" tests="7" time="4.37009">
+  <testcase classname="src.test.java.gakushu.wordbooks.update.wordbook-update" name="A valid payload must update a Wordbook" time="2.264051">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+And path '/', module.externalId, '/wordbooks/', externalId ................ passed
+When method put ........................................................... passed
+Then status 204 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.gakushu.wordbooks.update.wordbook-update" name="Invalid payload must return error code 400" time="0.474893">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+And path '/', module.externalId, '/wordbooks/', externalId ................ passed
+When method put ........................................................... passed
+Then status 204 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid ExternalId', status:400 } .... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.gakushu.wordbooks.update.wordbook-update" name="Invalid payload must return error code 400" time="0.417969">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+And path '/', module.externalId, '/wordbooks/', externalId ................ passed
+When method put ........................................................... passed
+Then status 204 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid ExternalId', status:400 } .... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'ExternalId in path and wordbook body is different!', status:400 } . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.gakushu.wordbooks.update.wordbook-update" name="Invalid payload must return error code 400" time="0.465738">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+And path '/', module.externalId, '/wordbooks/', externalId ................ passed
+When method put ........................................................... passed
+Then status 204 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid ExternalId', status:400 } .... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'ExternalId in path and wordbook body is different!', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.gakushu.wordbooks.update.wordbook-update" name="Invalid payload must return error code 400" time="0.266152">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+And path '/', module.externalId, '/wordbooks/', externalId ................ passed
+When method put ........................................................... passed
+Then status 204 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid ExternalId', status:400 } .... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'ExternalId in path and wordbook body is different!', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.gakushu.wordbooks.update.wordbook-update" name="Invalid payload must return error code 400" time="0.23961">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+And path '/', module.externalId, '/wordbooks/', externalId ................ passed
+When method put ........................................................... passed
+Then status 204 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid ExternalId', status:400 } .... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'ExternalId in path and wordbook body is different!', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.gakushu.wordbooks.update.wordbook-update" name="Invalid payload must return error code 400" time="0.241678">
+    <system-out>* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+* def payload = ........................................................... passed
+Given request payload ..................................................... passed
+And path '/', module.externalId, '/wordbooks/', externalId ................ passed
+When method put ........................................................... passed
+Then status 204 ........................................................... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid ExternalId', status:400 } .... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'ExternalId in path and wordbook body is different!', status:400 } . passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed
+* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... passed
+Given path '/', module.externalId, '/wordbooks/', externalId .............. passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 400 ........................................................... passed
+And match response contains { title:'Invalid fields!', status:400 } ....... passed</system-out>
+  </testcase>
+</testsuite>

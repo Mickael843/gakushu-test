@@ -27,6 +27,14 @@ public class DataGenerator {
         return faker().pokemon().name();
     }
 
+    public static String randomTitle() {
+        return faker().book().title();
+    }
+
+    public static String randomContent() {
+        return faker().lorem().paragraph();
+    }
+
     public static String dateTime() {
         return LocalDateTime.now().toString();
     }

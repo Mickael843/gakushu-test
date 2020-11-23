@@ -1,0 +1,26 @@
+<testsuite failures="1" name="src/test/java/gakushu/wordbooks/delete/wordbook-delete.feature" skipped="0" tests="1" time="1.293766">
+  <testcase classname="src.test.java.gakushu.wordbooks.delete.wordbook-delete" name="Must delete a Wordbook" time="1.293766">
+    <failure message="wordbook-delete.feature:19 - evaluation (js) failed: wordbook.externalId, javax.script.ScriptException: TypeError: Cannot get property &quot;externalId&quot; of null in &lt;eval&gt; at line number 1&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)">* url 'http://localhost:8080/gakushu/v1/modules' .......................... passed
+* def generate = Java.type('gakushu.DataGenerator') ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def module = response[0] ................................................ passed
+Given path '/', module.externalId, '/wordbooks' ........................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def wordbook = response[0] .............................................. passed
+* def externalId = wordbook.externalId .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: wordbook-delete.feature:19 - evaluation (js) failed: wordbook.externalId, javax.script.ScriptException: TypeError: Cannot get property "externalId" of null in &lt;eval&gt; at line number 1
+stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)&#13;
+	at ✽.* def externalId = wordbook.externalId (wordbook-delete.feature:19)&#13;
+
+Given path '/', module.externalId, '/wordbooks/', externalId .............. skipped
+When method delete ........................................................ skipped
+Then status 204 ........................................................... skipped
+Given path '/', module.externalId, '/wordbooks/', externalId .............. skipped
+When method get ........................................................... skipped
+Then status 404 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

@@ -4,7 +4,7 @@ Feature: Endpoint for Module delete
     * url 'http://localhost:8080/gakushu/v1/modules'
     * def generate = Java.type('gakushu.DataGenerator')
 
-  Scenario: A valid payload must delete a Module
+  Scenario: Must delete a Module
 
     When method get
     Then status 200

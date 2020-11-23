@@ -11,7 +11,6 @@ Feature: Endpoint for Module update
 
     * def first = response[0]
 
-
     * def externalId = generate.uuid()
     * def name = generate.randomName()
     * def month = generate.randomMonth()
